@@ -2,19 +2,48 @@
     line-height: 1.5;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
+/* Adjust font size for smaller screens */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
 }
 
+/* Adjust font size for very small screens */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+/* Responsive text */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Responsive image */
 img {
+    max-width: 100%;
     height: auto;
-    width: 800px;
+    border-radius: 10px;
 }
 
 ul {
     list-style: none;
 }
 
+/* Responsive heading */
 h1 {
+    font-size: 2em;
     color: green;
+    text-align: center;
+}
+
+h2 {
+    color: blue;
+}
+
+ol {
+    list-style: number;
 }
