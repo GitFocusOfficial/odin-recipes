@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.header, .container, .footer {
+    width: 100%; /* Ensure that elements occupy the full width of the screen */
+}
+
 /* Header styling */
 .header {
     background-color: #333;
@@ -22,7 +26,7 @@
     margin: 0 auto;
     width: 100%;
     box-sizing: border-box; /* Ensure padding is included in width */
-    /* word-wrap: break-word; /* Ensure long words break to prevent overflow */
+    word-wrap: break-word; /* Ensure long words break to prevent overflow */
 }
 
 .logo-link {
@@ -33,9 +37,9 @@
 }
 
 .logo-img {
-    width: 50px;
+    max-width: 50px; /* Adjust of necessary */
     height: auto;
-    margin-right: 10px;
+    display: block;
 }
 
 .logo-text {
@@ -53,7 +57,6 @@
     gap: 20px;
     margin: 0;
     padding: 0;
-    /* word-wrap: break-word; /* Ensure long words break to prevent overflow */
 }
 
 .nav-links li {
@@ -64,7 +67,7 @@
     color: #fff;
     text-decoration: none;
     font-size: 1em;
-    /* word-wrap: break-word; /* Ensure long words break to prevent overflow */
+    display: block;
 }
 
 .nav-links a:hover {
@@ -94,11 +97,10 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    max-width: 1200px;
+    max-width: 100%; /* Ensure it occupies the full width */
     margin: 0 auto;
     min-height: calc(100vh - 60px); /* Adjust height to push footer to bottom */
-    box-sizing: border-box;
-    /* word-wrap: break-word; /* Ensure long words break to prevent overflow */
+    word-wrap: break-word; /* Ensure long words break to prevent overflow */
 }
 
 /* Adjust for size for larger screens (laptops/desktops) */
@@ -153,6 +155,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    width: 100%;
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
@@ -189,7 +192,7 @@ ol {
     padding: 20px;
     text-align: center;
     width: 100%;
-    margin-top: 20px;
+    box-sizing: border-box; /* Ensure padding is included in width */
 }
 
 .footer-content {
