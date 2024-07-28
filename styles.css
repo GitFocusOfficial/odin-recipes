@@ -1,18 +1,55 @@
-* {
-    line-height: 1.5;
+/* Flexbox container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* Adjust font size for smaller screens */
-@media (max-width: 768px) {
+/* Adjust for size for larger screens (laptops/desktops) */
+@media (min-width: 769px) {
     body {
-        font-size: 14px;
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    p {
+        font-size: 1.2em;
     }
 }
 
-/* Adjust font size for very small screens */
+/* Adjust font size for medium screens (tablets) */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+/* Adjust font size for very small screens (phones) */
 @media (max-width: 480px) {
     body {
-        font-size: 12px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.9em;
     }
 }
 
@@ -20,6 +57,9 @@
 body {
     font-family: Arial, sans-serif;
     font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
 /* Responsive image */
@@ -30,7 +70,7 @@ img {
 }
 
 ul {
-    list-style: none;
+    list-style: disc;
 }
 
 /* Responsive heading */
