@@ -4,8 +4,10 @@
     box-sizing: border-box;
 }
 
-.header, .container, .footer {
+.header, .footer {
     width: 100%; /* Ensure that elements occupy the full width of the screen */
+    padding: 10px 20px;
+    box-sizing: border-box; /* Ensure padding is included in width */
 }
 
 /* Header styling */
@@ -114,7 +116,8 @@
     }
 
     p {
-        font-size: 1.2em;
+        font-size: 1.1em;
+        margin-bottom: 1.0em; /* Adjust the value to control the gap between paragraphs */
     }
 }
 
@@ -130,6 +133,7 @@
 
     p {
         font-size: 1em;
+        margin-bottom: 0.9em; /* Adjust the value to control the gap between paragraphs */
     }
 }
 
@@ -145,6 +149,7 @@
 
     p {
         font-size: 0.9em;
+        margin-bottom: 0.8em; /* Adjust the value to control the gap between paragraphs */
     }
 }
 
@@ -155,7 +160,6 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    width: 100%;
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
@@ -168,6 +172,8 @@ img {
 
 ul {
     list-style: disc;
+    padding: 10px;
+    margin-left: 30px;
 }
 
 /* Responsive heading */
@@ -179,10 +185,18 @@ h1 {
 
 h2 {
     color: blue;
+    margin-bottom: 0.3em;
 }
 
 ol {
     list-style: number;
+    padding: 10px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+li {
+    margin-bottom: 0.5em;
 }
 
 /* Footer styling */
